@@ -11,7 +11,7 @@ using Robust.Shared.Random;
 
 namespace Content.Server.Lavaland.Artefacts.Systems;
 
-public sealed class DragonBloodSystem : EntitySystem
+public sealed partial class DragonBloodSystem : EntitySystem
 {
     [Dependency] private SharedActionsSystem _action = default!;
     [Dependency] private SharedAudioSystem _audio = default!;

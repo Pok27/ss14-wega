@@ -15,7 +15,7 @@ using Robust.Shared.Player;
 
 namespace Content.Server._Wega.Implants;
 
-public sealed class MindControlSystem : EntitySystem
+public sealed partial class MindControlSystem : EntitySystem
 {
     private const string FollowOrdersObjectiveId = "MindControlledFollowOrders";
 

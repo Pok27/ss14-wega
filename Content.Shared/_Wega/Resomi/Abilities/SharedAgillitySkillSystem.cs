@@ -7,9 +7,9 @@ using Content.Shared.Actions;
 
 namespace Content.Shared.Resomi.Abilities;
 
-public abstract class SharedAgillitySkillSystem : EntitySystem
+public abstract partial class SharedAgillitySkillSystem : EntitySystem
 {
-    [Dependency] protected readonly IGameTiming Timing = default!;
+    [Dependency] protected IGameTiming Timing = default!;
     [Dependency] private ClimbSystem _climb = default!;
     [Dependency] private SharedStaminaSystem _stamina = default!;
     [Dependency] private SharedActionsSystem _actions = default!;

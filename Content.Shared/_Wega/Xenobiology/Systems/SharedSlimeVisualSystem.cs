@@ -3,7 +3,7 @@ using Robust.Shared.Prototypes;
 
 namespace Content.Shared.Xenobiology;
 
-public abstract class SharedSlimeVisualSystem : EntitySystem
+public abstract partial class SharedSlimeVisualSystem : EntitySystem
 {
     [Dependency] private IPrototypeManager _proto = default!;
     [Dependency] private MetaDataSystem _metaData = default!;

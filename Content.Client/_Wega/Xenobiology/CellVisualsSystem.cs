@@ -5,7 +5,7 @@ using Robust.Client.GameObjects;
 
 namespace Content.Client._Wega.Xenobiology;
 
-public sealed class CellVisualsSystem : SharedCellVisualsSystem
+public sealed partial class CellVisualsSystem : SharedCellVisualsSystem
 {
     [Dependency] private SpriteSystem _sprite = default!;
 

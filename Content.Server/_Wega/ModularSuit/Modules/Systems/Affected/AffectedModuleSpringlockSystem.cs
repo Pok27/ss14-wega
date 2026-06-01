@@ -11,7 +11,7 @@ using Robust.Shared.Timing;
 
 namespace Content.Server.Modular.Suit;
 
-public sealed class AffectedModuleSpringlockSystem : EntitySystem
+public sealed partial class AffectedModuleSpringlockSystem : EntitySystem
 {
     [Dependency] private SharedAchievementsSystem _achievement = default!;
     [Dependency] private SharedAudioSystem _audio = default!;

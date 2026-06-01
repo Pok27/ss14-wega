@@ -8,7 +8,7 @@ using Robust.Shared.Prototypes;
 
 namespace Content.Server.Vampire;
 
-public sealed class HolyPointSystem : EntitySystem
+public sealed partial class HolyPointSystem : EntitySystem
 {
     [Dependency] private ChatSystem _chat = default!;
     [Dependency] private EntityLookupSystem _entityLookup = default!;

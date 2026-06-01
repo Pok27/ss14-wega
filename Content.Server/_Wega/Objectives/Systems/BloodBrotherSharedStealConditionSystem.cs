@@ -15,7 +15,7 @@ using Content.Shared.CartridgeLoader;
 
 namespace Content.Server.Objectives.Systems;
 
-public sealed class BloodBrotherSharedStealConditionSystem : EntitySystem
+public sealed partial class BloodBrotherSharedStealConditionSystem : EntitySystem
 {
     [Dependency] private IRobustRandom _random = default!;
     [Dependency] private IPrototypeManager _proto = default!;

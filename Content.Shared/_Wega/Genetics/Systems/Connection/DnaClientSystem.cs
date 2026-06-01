@@ -3,7 +3,7 @@ using Robust.Shared.Serialization;
 
 namespace Content.Shared.Genetics.Systems;
 
-public sealed class DnaClientSystem : EntitySystem
+public sealed partial class DnaClientSystem : EntitySystem
 {
     [Dependency] private DnaServerSystem _dnaServer = default!;
 

@@ -238,7 +238,7 @@ public sealed partial class ModularSuitWindow : BaseWindow
     protected override DragMode GetDragModeFor(Vector2 relativeMousePos) => DragMode.Move;
 }
 
-public sealed class ModuleControl : PanelContainer
+public sealed partial class ModuleControl : PanelContainer
 {
     private readonly CheckBox? _toggleButton;
     public event Action<bool>? OnToggle;
@@ -334,7 +334,7 @@ public sealed class ModuleControl : PanelContainer
     }
 }
 
-public sealed class PartControl : PanelContainer
+public sealed partial class PartControl : PanelContainer
 {
     public PartControl(SuitPartEntry part, IEntityManager entMan)
     {

@@ -9,7 +9,7 @@ using Robust.Shared.Audio.Systems;
 
 namespace Content.Server.Paper;
 
-public sealed class TicketMachineSystem : EntitySystem
+public sealed partial class TicketMachineSystem : EntitySystem
 {
     [Dependency] private SharedAudioSystem _audio = default!;
     [Dependency] private PaperSystem _paperSystem = default!;

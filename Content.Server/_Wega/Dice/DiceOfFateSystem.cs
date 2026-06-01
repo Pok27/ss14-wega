@@ -35,7 +35,7 @@ using Robust.Shared.Timing;
 
 namespace Content.Server.Dice;
 
-public sealed class DiceOfFateSystem : EntitySystem
+public sealed partial class DiceOfFateSystem : EntitySystem
 {
     [Dependency] private SharedAccessSystem _access = default!;
     [Dependency] private IAdminLogManager _admin = default!;

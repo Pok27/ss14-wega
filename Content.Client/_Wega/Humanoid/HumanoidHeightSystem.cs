@@ -4,7 +4,7 @@ using Robust.Client.GameObjects;
 
 namespace Content.Client.Humanoid;
 
-public sealed class HumanoidHeightSystem : EntitySystem
+public sealed partial class HumanoidHeightSystem : EntitySystem
 {
     [Dependency] private SpriteSystem _sprite = default!;
 

@@ -7,7 +7,7 @@ using Content.Shared.Popups;
 
 namespace Content.Server.Paper;
 
-public sealed class ChameleonStampSystem : EntitySystem
+public sealed partial class ChameleonStampSystem : EntitySystem
 {
     [Dependency] private SharedPopupSystem _popup = default!;
     [Dependency] private QuickDialogSystem _quickDialog = default!;

@@ -4,7 +4,7 @@ using Robust.Client.GameObjects;
 
 namespace Content.Client.WashingMachine
 {
-    public sealed class WashingMachineSystem : EntitySystem
+    public sealed partial class WashingMachineSystem : EntitySystem
     {
         [Dependency] private AppearanceSystem _appearance = default!;
         [Dependency] private SpriteSystem _sprite = default!;

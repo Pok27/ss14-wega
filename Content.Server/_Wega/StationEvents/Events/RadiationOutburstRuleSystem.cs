@@ -14,7 +14,7 @@ using Content.Shared.Ghost;
 
 namespace Content.Server.StationEvents.Events;
 
-public sealed class RadiationOutburstRuleSystem : StationEventSystem<RadiationOutburstRuleComponent> //port only with codeowner permision @4_ydo
+public sealed partial class RadiationOutburstRuleSystem : StationEventSystem<RadiationOutburstRuleComponent> //port only with codeowner permision @4_ydo
 {
     [Dependency] private IRobustRandom _random = default!;
     [Dependency] private SharedContainerSystem _containerSystem = default!;

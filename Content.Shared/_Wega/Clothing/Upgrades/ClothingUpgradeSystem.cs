@@ -17,7 +17,7 @@ using Robust.Shared.Prototypes;
 
 namespace Content.Shared.Clothing.Upgrades;
 
-public sealed class ClothingUpgradeSystem : EntitySystem
+public sealed partial class ClothingUpgradeSystem : EntitySystem
 {
     [Dependency] private ISharedAdminLogManager _adminLog = default!;
     [Dependency] private SharedContainerSystem _container = default!;

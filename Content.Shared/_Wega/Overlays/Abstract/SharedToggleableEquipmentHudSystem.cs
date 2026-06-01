@@ -9,7 +9,7 @@ using Robust.Shared.Timing;
 
 namespace Content.Shared.Overlay;
 
-public abstract class SharedToggleableEquipmentHudSystem<T> : EntitySystem where T : ToggleableHudComponent
+public abstract partial class SharedToggleableEquipmentHudSystem<T> : EntitySystem where T : ToggleableHudComponent
 {
     [Dependency] private SharedActionsSystem _actions = default!;
     [Dependency] private SharedAudioSystem _audio = default!;

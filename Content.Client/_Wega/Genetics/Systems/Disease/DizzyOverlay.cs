@@ -7,7 +7,7 @@ using Robust.Shared.Timing;
 
 namespace Content.Client.Genetics.System;
 
-public sealed class DizzyOverlay : Overlay
+public sealed partial class DizzyOverlay : Overlay
 {
     [Dependency] private IEntityManager _entityManager = default!;
     [Dependency] private IPlayerManager _playerManager = default!;

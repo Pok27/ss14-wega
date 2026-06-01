@@ -9,7 +9,7 @@ using Robust.Server.Audio;
 
 namespace Content.Server._Wega.Implants;
 
-public sealed class BatteryDrainerImplantSystem : EntitySystem
+public sealed partial class BatteryDrainerImplantSystem : EntitySystem
 {
     [Dependency] private HandsSystem _hands = default!;
     [Dependency] private BatterySystem _battery = default!;

@@ -4,7 +4,7 @@ using Robust.Shared.Random;
 
 namespace Content.Server.Traits.Assorted;
 
-public sealed class UncontrollableCoughSystem : EntitySystem
+public sealed partial class UncontrollableCoughSystem : EntitySystem
 {
     [Dependency] private IRobustRandom _random = default!;
     [Dependency] private DiseaseSystem _diseaseSystem = default!;

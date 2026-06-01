@@ -8,7 +8,7 @@ using Robust.Shared.Containers;
 
 namespace Content.Server.Modular.Suit;
 
-public sealed class ModularSuitItemModuleSystem : EntitySystem
+public sealed partial class ModularSuitItemModuleSystem : EntitySystem
 {
     [Dependency] private SharedContainerSystem _container = default!;
     [Dependency] private SharedHandsSystem _hands = default!;

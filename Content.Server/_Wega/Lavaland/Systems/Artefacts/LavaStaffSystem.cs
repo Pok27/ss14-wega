@@ -9,7 +9,7 @@ using Robust.Shared.Map;
 
 namespace Content.Server.Lavaland.Artefacts.Systems;
 
-public sealed class LavaStaffSystem : EntitySystem
+public sealed partial class LavaStaffSystem : EntitySystem
 {
     [Dependency] private IMapManager _mapManager = default!;
     [Dependency] private ITileDefinitionManager _tileDefManager = default!;

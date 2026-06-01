@@ -7,7 +7,7 @@ using Robust.Shared.Player;
 
 namespace Content.Client.Shaders.System;
 
-public sealed class NoirVisionSystem : EntitySystem
+public sealed partial class NoirVisionSystem : EntitySystem
 {
     [Dependency] private IPlayerManager _player = default!;
     [Dependency] private IOverlayManager _overlayMan = default!;

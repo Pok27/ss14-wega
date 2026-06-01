@@ -20,7 +20,7 @@ using Content.Shared.PowerCell;
 
 namespace Content.Server.Botany.Systems;
 
-public sealed class PlantAnalyzerSystem : SharedPlantAnalyzerSystem
+public sealed partial class PlantAnalyzerSystem : SharedPlantAnalyzerSystem
 {
     [Dependency] private BotanySystem _botany = default!;
     [Dependency] private UserInterfaceSystem _uiSystem = default!;

@@ -8,7 +8,7 @@ using Robust.Shared.Player;
 
 namespace Content.Server.GameTicking
 {
-    public sealed class AutoVoteSystem : EntitySystem
+    public sealed partial class AutoVoteSystem : EntitySystem
     {
         [Dependency] private IVoteManager _voteManager = default!;
         [Dependency] private IPlayerManager _playerManager = default!;

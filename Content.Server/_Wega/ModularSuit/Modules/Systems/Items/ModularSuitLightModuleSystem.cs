@@ -9,7 +9,7 @@ using Robust.Shared.Containers;
 
 namespace Content.Server.Modular.Suit;
 
-public sealed class ModularSuitLightModuleSystem : EntitySystem
+public sealed partial class ModularSuitLightModuleSystem : EntitySystem
 {
     [Dependency] private SharedContainerSystem _container = default!;
     [Dependency] private InventorySystem _inventory = default!;

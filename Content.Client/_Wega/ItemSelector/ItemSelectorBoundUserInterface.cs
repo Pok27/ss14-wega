@@ -6,7 +6,7 @@ using Robust.Shared.Player;
 namespace Content.Client._Wega.Item.Selector.UI;
 
 [UsedImplicitly]
-public sealed class ItemSelectorBoundUserInterface : BoundUserInterface
+public sealed partial class ItemSelectorBoundUserInterface : BoundUserInterface
 {
     [Dependency] private ISharedPlayerManager _playerManager = default!;
 

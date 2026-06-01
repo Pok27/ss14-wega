@@ -12,7 +12,7 @@ using Robust.Shared.Timing;
 
 namespace Content.Client._Wega.GPS.UI;
 
-public sealed class GpsNavMapControl : Control
+public sealed partial class GpsNavMapControl : Control
 {
     [Dependency] private IResourceCache _resourceCache = default!;
     [Dependency] private IEntityManager _entityManager = default!;

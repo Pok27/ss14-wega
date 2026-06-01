@@ -6,7 +6,7 @@ using Content.Server.Clothing.Systems;
 
 namespace Content.Shared.Clothing;
 
-public sealed class ForceLoadoutSystem : EntitySystem
+public sealed partial class ForceLoadoutSystem : EntitySystem
 {
     [Dependency] private IRobustRandom _random = default!;
     [Dependency] private OutfitSystem _outfitSystem = default!;

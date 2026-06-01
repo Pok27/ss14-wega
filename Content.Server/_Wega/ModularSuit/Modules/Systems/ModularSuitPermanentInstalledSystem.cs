@@ -2,7 +2,7 @@ using Content.Shared.Modular.Suit;
 
 namespace Content.Server.Modular.Suit;
 
-public sealed class ModularSuitPermanentInstalledSystem : EntitySystem
+public sealed partial class ModularSuitPermanentInstalledSystem : EntitySystem
 {
     [Dependency] private SharedModularSuitSystem _modularSuit = default!;
 

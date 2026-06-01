@@ -13,7 +13,7 @@ using Robust.Shared.Timing;
 
 namespace Content.Server.Medical.Surgery
 {
-    public sealed class BodyScannerConsoleSystem : EntitySystem
+    public sealed partial class BodyScannerConsoleSystem : EntitySystem
     {
         [Dependency] private UserInterfaceSystem _uiSystem = default!;
         [Dependency] private IPrototypeManager _prototypeManager = default!;

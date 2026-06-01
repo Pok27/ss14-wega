@@ -132,7 +132,7 @@ public abstract partial class SharedOfferItemSystem : EntitySystem
 }
 
 [Serializable, NetSerializable]
-public sealed class RequestToggleOfferEvent : EntityEventArgs
+public sealed partial class RequestToggleOfferEvent : EntityEventArgs
 {
     public NetEntity Player { get; }
 

@@ -7,7 +7,7 @@ using Content.Shared.Stunnable;
 
 namespace Content.Server.Modular.Suit;
 
-public sealed class AtrocinatorModuleHandler : ModuleActionHandler
+public sealed partial class AtrocinatorModuleHandler : ModuleActionHandler
 {
     [Dependency] private EntityLookupSystem _lookup = default!;
     [Dependency] private IRobustRandom _random = default!;

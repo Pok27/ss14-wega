@@ -10,7 +10,7 @@ using Robust.Shared.Player;
 
 namespace Content.Server.SexToy.System
 {
-    public sealed class SexToyUsageSystem : EntitySystem
+    public sealed partial class SexToyUsageSystem : EntitySystem
     {
         [Dependency] private IEntityManager _entManager = default!;
         [Dependency] private PopupSystem _popupSystem = default!;

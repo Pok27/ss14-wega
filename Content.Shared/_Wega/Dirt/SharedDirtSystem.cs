@@ -15,7 +15,7 @@ using Robust.Shared.Random;
 
 namespace Content.Shared.DirtVisuals;
 
-public sealed class SharedDirtSystem : EntitySystem
+public sealed partial class SharedDirtSystem : EntitySystem
 {
     [Dependency] private InventorySystem _inventory = default!;
     [Dependency] private IPrototypeManager _prototype = default!;

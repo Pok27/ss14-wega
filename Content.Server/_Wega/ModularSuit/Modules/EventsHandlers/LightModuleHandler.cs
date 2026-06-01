@@ -6,7 +6,7 @@ using Robust.Server.GameObjects;
 
 namespace Content.Server.Modular.Suit;
 
-public sealed class LightModuleHandler : ModuleActionHandler
+public sealed partial class LightModuleHandler : ModuleActionHandler
 {
     [Dependency] private SharedActionsSystem _actions = default!;
     [Dependency] private InventorySystem _inventory = default!;

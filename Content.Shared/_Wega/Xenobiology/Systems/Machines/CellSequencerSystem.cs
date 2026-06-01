@@ -9,7 +9,7 @@ using Robust.Shared.Containers;
 
 namespace Content.Shared.Xenobiology.Systems.Machines;
 
-public sealed class CellSequencerSystem : EntitySystem
+public sealed partial class CellSequencerSystem : EntitySystem
 {
     [Dependency] private CellClientSystem _cellClient = default!;
     [Dependency] private CellServerSystem _cellServer = default!;

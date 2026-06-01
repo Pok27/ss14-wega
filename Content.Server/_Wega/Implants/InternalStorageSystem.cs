@@ -6,7 +6,7 @@ using Content.Shared.Mobs;
 
 namespace Content.Server.Implants;
 
-public sealed class InternalStorageSystem : SharedInternalStorageSystem
+public sealed partial class InternalStorageSystem : SharedInternalStorageSystem
 {
     [Dependency] private LegionSystem _legion = default!;
 

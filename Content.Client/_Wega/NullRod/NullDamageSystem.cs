@@ -5,7 +5,7 @@ using Robust.Shared.Player;
 
 namespace Content.Client.NullRod;
 
-public sealed class NullDamageSystem : EntitySystem
+public sealed partial class NullDamageSystem : EntitySystem
 {
     [Dependency] private IPlayerManager _player = default!;
     [Dependency] private IOverlayManager _overlayMan = default!;

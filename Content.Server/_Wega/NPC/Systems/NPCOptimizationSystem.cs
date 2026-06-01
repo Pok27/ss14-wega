@@ -13,7 +13,7 @@ using Robust.Shared.Timing;
 
 namespace Content.Server.NPC.Systems;
 
-public sealed class NPCOptimizationSystem : EntitySystem
+public sealed partial class NPCOptimizationSystem : EntitySystem
 {
     [Dependency] private IConfigurationManager _configuration = default!;
     [Dependency] private EntityLookupSystem _lookup = default!;

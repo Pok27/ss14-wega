@@ -8,7 +8,7 @@ using Robust.Shared.Prototypes;
 
 namespace Content.Server.Genetics.System;
 
-public sealed class EnsureMarkingSystem : EntitySystem
+public sealed partial class EnsureMarkingSystem : EntitySystem
 {
     [Dependency] private SharedVisualBodySystem _visualBody = default!;
 

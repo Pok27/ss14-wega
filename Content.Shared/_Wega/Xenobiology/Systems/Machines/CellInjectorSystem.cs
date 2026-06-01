@@ -13,7 +13,7 @@ using Robust.Shared.Timing;
 
 namespace Content.Shared.Xenobiology.Systems.Machines;
 
-public sealed class CellMutagenicInjectorSystem : EntitySystem
+public sealed partial class CellMutagenicInjectorSystem : EntitySystem
 {
     [Dependency] private SharedAudioSystem _audio = default!;
     [Dependency] private SharedCellSystem _cell = default!;

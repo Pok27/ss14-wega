@@ -26,7 +26,7 @@ namespace Content.Server.Disease
     /// <summary>
     /// Handles disease propagation & curing
     /// </summary>
-    public sealed class DiseaseSystem : SharedDiseaseSystem
+    public sealed partial class DiseaseSystem : SharedDiseaseSystem
     {
         [Dependency] private IPrototypeManager _prototypeManager = default!;
         [Dependency] private IRobustRandom _random = default!;

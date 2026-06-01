@@ -10,9 +10,9 @@ using Robust.Shared.Audio.Systems;
 
 namespace Content.Shared.Movement.Systems;
 
-public abstract class SharedFlyAbilitySystem : EntitySystem
+public abstract partial class SharedFlyAbilitySystem : EntitySystem
 {
-    [Dependency] protected readonly IGameTiming Timing = default!;
+    [Dependency] protected IGameTiming Timing = default!;
     [Dependency] private SharedAmbientSoundSystem _ambient = default!;
     [Dependency] private SharedActionsSystem _actions = default!;
     [Dependency] private SharedPhysicsSystem _physics = default!;

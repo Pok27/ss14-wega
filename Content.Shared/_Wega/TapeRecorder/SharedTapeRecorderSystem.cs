@@ -18,13 +18,13 @@ using System.Text;
 
 namespace Content.Shared.TapeRecorder;
 
-public abstract class SharedTapeRecorderSystem : EntitySystem
+public abstract partial class SharedTapeRecorderSystem : EntitySystem
 {
     [Dependency] private EntityWhitelistSystem _whitelist = default!;
-    [Dependency] protected readonly IGameTiming Timing = default!;
+    [Dependency] protected IGameTiming Timing = default!;
     [Dependency] private IRobustRandom _random = default!;
     [Dependency] private SharedAppearanceSystem _appearance = default!;
-    [Dependency] protected readonly SharedAudioSystem Audio = default!;
+    [Dependency] protected SharedAudioSystem Audio = default!;
     [Dependency] private SharedDoAfterSystem _doAfter = default!;
     [Dependency] private ItemSlotsSystem _slots = default!;
     [Dependency] private SharedUserInterfaceSystem _ui = default!;

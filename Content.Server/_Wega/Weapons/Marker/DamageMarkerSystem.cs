@@ -7,7 +7,7 @@ using Robust.Shared.Audio.Systems;
 
 namespace Content.Server.Weapons.Marker;
 
-public sealed class DamageMarkerSystem : EntitySystem
+public sealed partial class DamageMarkerSystem : EntitySystem
 {
     [Dependency] private SharedAudioSystem _audio = default!;
     [Dependency] private AtmosphereSystem _atmos = default!;

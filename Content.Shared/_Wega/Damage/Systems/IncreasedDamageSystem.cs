@@ -3,7 +3,7 @@ using Robust.Shared.Timing;
 
 namespace Content.Shared.Damage.Systems;
 
-public sealed class IncreasedDamageSystem : EntitySystem
+public sealed partial class IncreasedDamageSystem : EntitySystem
 {
     [Dependency] private DamageableSystem _damage = default!;
     [Dependency] private IGameTiming _timing = default!;

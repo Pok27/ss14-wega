@@ -9,7 +9,7 @@ using Robust.Shared.Player;
 
 namespace Content.Server.MindCommunication;
 
-public sealed class MindCommunicationGenSystem : EntitySystem
+public sealed partial class MindCommunicationGenSystem : EntitySystem
 {
     [Dependency] private SharedActionsSystem _action = default!;
     [Dependency] private IAdminLogManager _admin = default!;

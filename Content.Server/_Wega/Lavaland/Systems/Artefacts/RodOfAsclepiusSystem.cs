@@ -20,7 +20,7 @@ using Robust.Shared.Timing;
 
 namespace Content.Server.Lavaland.Artefacts.Systems;
 
-public sealed class RodOfAsclepiusSystem : EntitySystem
+public sealed partial class RodOfAsclepiusSystem : EntitySystem
 {
     [Dependency] private AppearanceSystem _appearance = default!;
     [Dependency] private IGameTiming _timing = default!;

@@ -7,7 +7,7 @@ using Content.Server.Popups;
 
 namespace Content.Server.Damage.Systems;
 
-public sealed class DamageOnActionSystem : EntitySystem
+public sealed partial class DamageOnActionSystem : EntitySystem
 {
     [Dependency] private DamageableSystem _damageable = default!;
     [Dependency] private SharedActionsSystem _actions = default!;

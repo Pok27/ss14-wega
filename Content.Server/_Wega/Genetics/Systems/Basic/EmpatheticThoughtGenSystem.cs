@@ -14,7 +14,7 @@ using Robust.Shared.Utility;
 
 namespace Content.Server.Genetics.System;
 
-public sealed class EmpatheticThoughtGenSystem : EntitySystem
+public sealed partial class EmpatheticThoughtGenSystem : EntitySystem
 {
     [Dependency] private EntityLookupSystem _entityLookup = default!;
     [Dependency] private SharedMindSystem _mindSystem = default!;

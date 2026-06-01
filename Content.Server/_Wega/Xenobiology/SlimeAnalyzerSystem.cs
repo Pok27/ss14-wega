@@ -18,7 +18,7 @@ using Content.Shared.PowerCell;
 
 namespace Content.Server.Medical;
 
-public sealed class SlimeAnalyzerSystem : EntitySystem
+public sealed partial class SlimeAnalyzerSystem : EntitySystem
 {
     [Dependency] private SharedAudioSystem _audio = default!;
     [Dependency] private IGameTiming _gameTiming = default!;

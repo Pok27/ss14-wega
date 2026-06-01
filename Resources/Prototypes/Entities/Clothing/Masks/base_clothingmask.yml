@@ -38,7 +38,7 @@
 
 - type: entity
   abstract: true
-  parent: [SolutionFood, SolutionToolSmall, ClothingMaskBase, ClothingMaskBaseButcherable] # Corvax-Wega-Edit
+  parent: [SolutionFood, SolutionToolSmall, ClothingMaskBase]
   id: ClothingMaskBaseButcherable
   components:
   - type: Butcherable

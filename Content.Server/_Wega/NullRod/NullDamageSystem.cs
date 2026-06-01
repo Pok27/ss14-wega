@@ -10,7 +10,7 @@ using Content.Shared.Rejuvenate;
 
 namespace Content.Server.NullRod;
 
-public sealed class NullDamageSystem : EntitySystem
+public sealed partial class NullDamageSystem : EntitySystem
 {
     [Dependency] private IAdminLogManager _admin = default!;
     [Dependency] private IGameTiming _timing = default!;

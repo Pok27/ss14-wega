@@ -924,7 +924,7 @@ public sealed partial class AshDrakeSystem : EntitySystem
         => _audio.PlayPvs(ent.Comp.AttackSound, ent);
 }
 
-public sealed class LavaArenaData
+public sealed partial class LavaArenaData
 {
     public Vector2 ArenaCenter;
     public int ArenaSize;

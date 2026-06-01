@@ -7,7 +7,7 @@ using Robust.Shared.Random;
 
 namespace Content.Server.Genetics.System;
 
-public sealed class TourettesSyndromeSystem : EntitySystem
+public sealed partial class TourettesSyndromeSystem : EntitySystem
 {
     [Dependency] private ChatSystem _chat = default!;
     [Dependency] private SharedJitteringSystem _jitteringSystem = default!;

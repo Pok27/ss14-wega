@@ -7,7 +7,7 @@ using Robust.Shared.Prototypes;
 
 namespace Content.Client.Veil.Cult
 {
-    public sealed class VeilCultSystem : SharedVeilCultSystem
+    public sealed partial class VeilCultSystem : SharedVeilCultSystem
     {
         [Dependency] private IPrototypeManager _prototype = default!;
         [Dependency] private SpriteSystem _sprite = default!;

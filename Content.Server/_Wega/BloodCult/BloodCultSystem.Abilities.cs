@@ -100,7 +100,7 @@ public sealed partial class BloodCultSystem
         SubscribeLocalEvent<BloodCultistComponent, BloodCultBloodRitesActionEvent>(OnBloodRites);
 
         SubscribeLocalEvent<BloodSpellComponent, UseInHandEvent>(BloodRites);
-		SubscribeLocalEvent<BloodSpellComponent, ExaminedEvent>(OnExamine);
+        SubscribeLocalEvent<BloodSpellComponent, ExaminedEvent>(OnExamine);
         SubscribeLocalEvent<BloodSpellComponent, BloodRitesSelectRitesMessage>(BloodRitesSelect);
         SubscribeLocalEvent<BloodCultistComponent, BloodCultBloodOrbActionEvent>(OnBloodOrb);
         SubscribeLocalEvent<BloodOrbComponent, UseInHandEvent>(OnBloodOrbAbsorbed);
@@ -386,7 +386,7 @@ public sealed partial class BloodCultSystem
         }
     }
 
-     private void OnExamine(EntityUid uid, BloodSpellComponent spell, ExaminedEvent args)
+    private void OnExamine(EntityUid uid, BloodSpellComponent spell, ExaminedEvent args)
     {
         if (spell.SpellType != BloodCultSpell.BloodRites)
             return;
@@ -959,7 +959,7 @@ public sealed partial class BloodCultSystem
         var absorbedBlood = 0;
         foreach (var containedEntity in container.ContainedEntities.ToList())
         {
-            if (!_solution.TryGetSolution(containedEntity, null, out var solutionComp, out var solutionData))
+            if (!_solution.TryGetSolution(containedEntity, "solution", out var solutionComp, out var solutionData))
                 continue;
 
             var bloodReagents = solutionData.Contents
@@ -975,7 +975,7 @@ public sealed partial class BloodCultSystem
             if (bloodReagents.Count > 0)
                 Spawn("BloodCultFloorGlowEffect", Transform(puddle).Coordinates);
 
-            if (_solution.TryGetSolution(containedEntity, null, out _, out var updatedSolution) && updatedSolution.Contents.Count == 0)
+            if (_solution.TryGetSolution(containedEntity, "solution", out _, out var updatedSolution) && updatedSolution.Contents.Count == 0)
                 QueueDel(puddle);
         }
 
@@ -1030,24 +1030,24 @@ public sealed partial class BloodCultSystem
         }
     }
 
-	private bool TrySpawnSpellInHand(EntityUid uid, EntProtoId proto)
-	{
-		if (!TryComp<HandsComponent>(uid, out var hands))
-			return false;
+    private bool TrySpawnSpellInHand(EntityUid uid, EntProtoId proto)
+    {
+        if (!TryComp<HandsComponent>(uid, out var hands))
+            return false;
 
-		var spell = Spawn(proto, Transform(uid).Coordinates);
-		var activeHand = _hands.GetActiveHand((uid, hands));
+        var spell = Spawn(proto, Transform(uid).Coordinates);
+        var activeHand = _hands.GetActiveHand((uid, hands));
 
-		if (_hands.TryPickupAnyHand(uid, spell))
-			return true;
+        if (_hands.TryPickupAnyHand(uid, spell))
+            return true;
+        else if (activeHand != null && _hands.TryForcePickup((uid, hands), spell, activeHand))
+            return true;
+        else
+        {
+            QueueDel(spell);
+            return false;
+        }
 
-		else if (activeHand != null && _hands.TryForcePickup((uid, hands), spell, activeHand))
-			return true;
-
-		else
-			QueueDel(spell);
-			return false;
-
-	}
+    }
     #endregion
 }

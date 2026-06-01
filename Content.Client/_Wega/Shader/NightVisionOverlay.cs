@@ -8,7 +8,7 @@ using Robust.Shared.Timing;
 
 namespace Content.Client.Shaders.Systems;
 
-public sealed class NightVisionOverlay : Overlay
+public sealed partial class NightVisionOverlay : Overlay
 {
     [Dependency] private IEntityManager _entityManager = default!;
     [Dependency] private IPlayerManager _playerManager = default!;

@@ -21,7 +21,7 @@ using Robust.Shared.Utility;
 
 namespace Content.Server.VentCraw;
 
-public sealed class VentCrawTubeSystem : EntitySystem
+public sealed partial class VentCrawTubeSystem : EntitySystem
 {
     [Dependency] private IGameTiming _gameTiming = default!;
     [Dependency] private MapSystem _mapSystem = default!;

@@ -7,7 +7,7 @@ using Robust.Shared.Prototypes;
 
 namespace Content.Server.Modular.Suit;
 
-public sealed class ModularSuitActionModuleSystem : EntitySystem
+public sealed partial class ModularSuitActionModuleSystem : EntitySystem
 {
     [Dependency] private ActionContainerSystem _actionContainer = default!;
     [Dependency] private SharedActionsSystem _actions = default!;

@@ -11,7 +11,7 @@ using Robust.Shared.Audio.Systems;
 
 namespace Content.Server.Modular.Suit;
 
-public sealed class ModularSuitMicrowaveSystem : EntitySystem
+public sealed partial class ModularSuitMicrowaveSystem : EntitySystem
 {
     [Dependency] private SharedAudioSystem _audio = default!;
     [Dependency] private SharedDoAfterSystem _doAfter = default!;

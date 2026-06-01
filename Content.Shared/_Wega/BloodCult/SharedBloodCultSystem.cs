@@ -9,7 +9,7 @@ using Content.Shared.Stunnable;
 
 namespace Content.Shared.Blood.Cult;
 
-public abstract class SharedBloodCultSystem : EntitySystem
+public abstract partial class SharedBloodCultSystem : EntitySystem
 {
     [Dependency] private SharedActionsSystem _action = default!;
     [Dependency] private SharedPopupSystem _popup = default!;

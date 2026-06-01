@@ -5,7 +5,7 @@ using Content.Shared.Popups;
 
 namespace Content.Server.Modular.Suit;
 
-public sealed class ModularSuitSpringlockModuleSystem : EntitySystem
+public sealed partial class ModularSuitSpringlockModuleSystem : EntitySystem
 {
     [Dependency] private SharedPopupSystem _popup = default!;
 

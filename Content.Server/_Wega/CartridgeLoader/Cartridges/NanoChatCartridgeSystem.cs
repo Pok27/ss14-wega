@@ -16,7 +16,7 @@ using Robust.Shared.Utility;
 
 namespace Content.Server.CartridgeLoader.Cartridges;
 
-public sealed class NanoChatCartridgeSystem : SharedNanoChatCartridgeSystem
+public sealed partial class NanoChatCartridgeSystem : SharedNanoChatCartridgeSystem
 {
     [Dependency] private IAdminLogManager _admin = default!;
     [Dependency] private SharedAudioSystem _audio = default!;

@@ -35,7 +35,7 @@ using Robust.Shared.Timing;
 
 namespace Content.Server.Lavaland.Artefacts.Systems;
 
-public sealed class VoiceOfGodSystem : EntitySystem
+public sealed partial class VoiceOfGodSystem : EntitySystem
 {
     [Dependency] private IAdminLogManager _admin = default!;
     [Dependency] private IGameTiming _timing = default!;
@@ -508,7 +508,7 @@ public sealed class VoiceOfGodSystem : EntitySystem
     #endregion
 }
 
-public sealed class VoiceOfGodCommand
+public sealed partial class VoiceOfGodCommand
 {
     public string Key { get; set; }
     public string Id { get; set; }

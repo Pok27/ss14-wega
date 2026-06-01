@@ -3,7 +3,7 @@ using Content.Shared.Modular.Suit;
 
 namespace Content.Server.Modular.Suit;
 
-public sealed class EnergyShieldModuleHandler : ModuleActionHandler
+public sealed partial class EnergyShieldModuleHandler : ModuleActionHandler
 {
     [Dependency] private SharedTransformSystem _transform = default!;
 

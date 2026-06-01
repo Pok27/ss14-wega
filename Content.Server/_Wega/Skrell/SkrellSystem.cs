@@ -9,7 +9,7 @@ using System.Linq;
 
 namespace Content.Server.Skrell;
 
-public sealed class SkrellSystem : EntitySystem
+public sealed partial class SkrellSystem : EntitySystem
 {
     [Dependency] private InventorySystem _inventorySystem = default!;
     [Dependency] private SharedVisualBodySystem _visualBody = default!;

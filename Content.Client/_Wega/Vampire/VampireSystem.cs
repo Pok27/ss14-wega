@@ -12,9 +12,9 @@ using Robust.Shared.Prototypes;
 
 namespace Content.Client.Vampire;
 
-public sealed class VampireSystem : SharedVampireSystem
+public sealed partial class VampireSystem : SharedVampireSystem
 {
-    [Dependency] private GhostSystem? _ghost = default;
+    [Dependency] private GhostSystem _ghost = default!;
     [Dependency] private IClientAdminManager _admin = default!;
     [Dependency] private IPlayerManager _playerManager = default!;
     [Dependency] private IPrototypeManager _prototype = default!;

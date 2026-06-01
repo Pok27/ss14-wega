@@ -68,7 +68,7 @@ using Robust.Shared.Timing;
 
 namespace Content.Server.Card.Tarot;
 
-public sealed class CardTarotSystem : EntitySystem
+public sealed partial class CardTarotSystem : EntitySystem
 {
     [Dependency] private AppearanceSystem _appearance = default!;
     [Dependency] private BloodstreamSystem _blood = default!;

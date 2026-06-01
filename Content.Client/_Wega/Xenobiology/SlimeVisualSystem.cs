@@ -6,7 +6,7 @@ using Robust.Client.GameObjects;
 
 namespace Content.Client._Wega.Xenobiology;
 
-public sealed class SlimeVisualSystem : SharedSlimeVisualSystem
+public sealed partial class SlimeVisualSystem : SharedSlimeVisualSystem
 {
     [Dependency] private SharedAppearanceSystem _appearance = default!;
     [Dependency] private SpriteSystem _sprite = default!;

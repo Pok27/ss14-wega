@@ -18,7 +18,7 @@ using Robust.Shared.Timing;
 
 namespace Content.Server.Economy.SlotMachine;
 
-public sealed class SlotMachineSystem : EntitySystem
+public sealed partial class SlotMachineSystem : EntitySystem
 {
     [Dependency] private SharedAppearanceSystem _appearance = default!;
     [Dependency] private SharedAudioSystem _audio = default!;

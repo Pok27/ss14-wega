@@ -5,7 +5,7 @@ using Content.Shared.Mobs.Components;
 
 namespace Content.Shared.Weapons.Hitscan.Systems;
 
-public sealed class HitscanEMPSystem : EntitySystem
+public sealed partial class HitscanEMPSystem : EntitySystem
 {
     [Dependency] private SharedEmpSystem _emp = default!;
 

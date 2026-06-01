@@ -4,7 +4,7 @@ using Robust.Shared.Random;
 
 namespace Content.Server.Modular.Suit;
 
-public sealed class DispenserModuleHandler : ModuleActionHandler
+public sealed partial class DispenserModuleHandler : ModuleActionHandler
 {
     [Dependency] private SharedHandsSystem _hands = default!;
     [Dependency] private IRobustRandom _random = default!;

@@ -12,7 +12,7 @@ namespace Content.Server.Speech.Synthesis.System;
 /// <summary>
 /// Обрабатывает барки для сущностей.
 /// </summary>
-public sealed class BarkSystem : EntitySystem
+public sealed partial class BarkSystem : EntitySystem
 {
     [Dependency] private AudioSystem _audio = default!;
     [Dependency] private IPrototypeManager _prototypeManager = default!;

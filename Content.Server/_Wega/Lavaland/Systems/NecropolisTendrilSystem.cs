@@ -14,7 +14,7 @@ using Robust.Shared.Timing;
 
 namespace Content.Server.Lavaland.Systems;
 
-public sealed class NecropolisTendrilSystem : EntitySystem
+public sealed partial class NecropolisTendrilSystem : EntitySystem
 {
     [Dependency] private SharedAudioSystem _audio = default!;
     [Dependency] private IGameTiming _timing = default!;

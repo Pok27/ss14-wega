@@ -9,7 +9,7 @@ using Content.Shared.Projectiles;
 
 namespace Content.Server.Projectiles;
 
-public sealed class ProjectileLifestealSystem : EntitySystem
+public sealed partial class ProjectileLifestealSystem : EntitySystem
 {
     [Dependency] private DamageableSystem _damage = default!;
     [Dependency] private MobStateSystem _mobState = default!;

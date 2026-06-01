@@ -10,7 +10,7 @@ using Content.Shared.Wieldable.Components;
 
 namespace Content.Server.Modular.Suit;
 
-public sealed class HolsterModuleHandler : ModuleActionHandler
+public sealed partial class HolsterModuleHandler : ModuleActionHandler
 {
     [Dependency] private SharedActionsSystem _actions = default!;
     [Dependency] private EntityWhitelistSystem _whitelist = default!;
@@ -46,7 +46,7 @@ public sealed class HolsterModuleHandler : ModuleActionHandler
             if (_hands.TryPickup(user, item))
             {
                 if (TryComp<WieldableComponent>(item, out var wieldable))
-                    _wieldable.TryWield(item, wieldable, user);
+                    _wieldable.TryWield((item, wieldable), user);
 
                 if (TryComp<ChamberMagazineAmmoProviderComponent>(item, out var chamber)
                     && chamber.BoltClosed != null && !chamber.BoltClosed.Value)

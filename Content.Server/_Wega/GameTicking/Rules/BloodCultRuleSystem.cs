@@ -39,7 +39,7 @@ using Robust.Shared.Random;
 
 namespace Content.Server.GameTicking.Rules
 {
-    public sealed class BloodCultRuleSystem : GameRuleSystem<BloodCultRuleComponent>
+    public sealed partial class BloodCultRuleSystem : GameRuleSystem<BloodCultRuleComponent>
     {
         [Dependency] private SharedAchievementsSystem _achievement = default!;
         [Dependency] private ActionsSystem _action = default!;

@@ -8,7 +8,7 @@ using Content.Shared.Sharpening.Events;
 
 namespace Content.Shared.Sharpening.Systems;
 
-public abstract class SharedSharpeningSystem : EntitySystem
+public abstract partial class SharedSharpeningSystem : EntitySystem
 {
     [Dependency] private SharedAudioSystem _audio = default!;
 

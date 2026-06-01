@@ -10,7 +10,7 @@ using Robust.Shared.Timing;
 namespace Content.Server.Wega.Commands;
 
 [AnyCommand()]
-public sealed class GhostRespawnCommand : IConsoleCommand
+public sealed partial class GhostRespawnCommand : IConsoleCommand
 {
     [Dependency] private IGameTiming _gameTiming = default!;
     [Dependency] private IEntityManager _entityManager = default!;

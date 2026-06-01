@@ -7,7 +7,7 @@ using Robust.Shared.Enums;
 
 namespace Content.Client.Offer;
 
-public sealed class OfferItemIndicatorsOverlay : Overlay
+public sealed partial class OfferItemIndicatorsOverlay : Overlay
 {
     [Dependency] private IInputManager _inputManager = default!;
     [Dependency] private IPlayerManager _player = default!;

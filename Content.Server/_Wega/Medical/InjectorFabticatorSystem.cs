@@ -13,7 +13,7 @@ using Robust.Shared.Containers;
 
 namespace Content.Server.Injector.Fabticator;
 
-public sealed class InjectorFabticatorSystem : EntitySystem
+public sealed partial class InjectorFabticatorSystem : EntitySystem
 {
     [Dependency] private SharedAmbientSoundSystem _ambient = default!;
     [Dependency] private SharedSolutionContainerSystem _solutionSystem = default!;
@@ -81,7 +81,7 @@ public sealed class InjectorFabticatorSystem : EntitySystem
 
     private void OnMapInit(EntityUid uid, InjectorFabticatorComponent component, MapInitEvent args)
     {
-        _solutionSystem.EnsureSolution(uid, InjectorFabticatorComponent.BufferSolutionName, out _, component.BufferMaxVolume);
+        _solutionSystem.EnsureSolution(uid, InjectorFabticatorComponent.BufferSolutionName, out _);
     }
 
     private void OnContainerModified(EntityUid uid, InjectorFabticatorComponent component, ContainerModifiedMessage args)

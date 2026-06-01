@@ -30,7 +30,7 @@ namespace Content.Shared.Vehicle;
 public abstract partial class SharedVehicleSystem : EntitySystem
 {
     [Dependency] private INetManager _netManager = default!;
-    [Dependency] protected readonly SharedAppearanceSystem Appearance = default!;
+    [Dependency] protected SharedAppearanceSystem Appearance = default!;
     [Dependency] private SharedAudioSystem _audioSystem = default!;
     [Dependency] private MovementSpeedModifierSystem _modifier = default!;
     [Dependency] private SharedAmbientSoundSystem _ambientSound = default!;

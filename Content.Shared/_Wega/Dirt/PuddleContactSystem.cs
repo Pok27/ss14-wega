@@ -3,7 +3,7 @@ using Robust.Shared.Physics.Events;
 
 namespace Content.Shared.DirtVisuals;
 
-public sealed class PuddleContactSystem : EntitySystem
+public sealed partial class PuddleContactSystem : EntitySystem
 {
     [Dependency] private SharedDirtSystem _dirt = default!;
     [Dependency] private SharedSolutionContainerSystem _solution = default!;

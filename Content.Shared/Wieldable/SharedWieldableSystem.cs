@@ -342,7 +342,7 @@ public abstract partial class SharedWieldableSystem : EntitySystem
         var othersMessage = Loc.GetString("wieldable-component-successful-wield-other", ("user", Identity.Entity(user, EntityManager)), ("item", wieldable.Owner));
         _popup.PopupPredicted(selfMessage, othersMessage, user, user);
 
-        component.User = user; //Corvax-Wega-Resomi
+        wieldable.Comp.User = user; //Corvax-Wega-Resomi
 
         var ev = new ItemWieldedEvent(user);
         RaiseLocalEvent(wieldable.Owner, ref ev);

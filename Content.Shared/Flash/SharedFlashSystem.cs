@@ -286,7 +286,6 @@ public abstract partial class SharedFlashSystem : EntitySystem
             args.Cancelled = true;
     }
 
-<<<<<<< HEAD
     // Corvax-Wega-Wielder-start
     private void OnMaskToggled(EntityUid uid, FlashImmunityComponent component, ItemMaskToggledEvent args)
     {
@@ -311,13 +310,6 @@ public abstract partial class SharedFlashSystem : EntitySystem
     }
     // Corvax-Wega-Arsenal-end
 
-    private void OnTemporaryBlindnessFlashAttempt(Entity<TemporaryBlindnessComponent> ent, ref FlashAttemptEvent args)
-    {
-        args.Cancelled = true;
-    }
-
-=======
->>>>>>> upstream/master
     private void OnFlashImmunityFlashAttempt(Entity<FlashImmunityComponent> ent, ref FlashAttemptEvent args)
     {
         if (TryComp<MaskComponent>(ent, out var mask) && mask.IsToggled)

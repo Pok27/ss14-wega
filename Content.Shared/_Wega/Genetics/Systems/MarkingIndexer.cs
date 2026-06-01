@@ -6,7 +6,7 @@ using Robust.Shared.Random;
 
 namespace Content.Shared.Genetics.Systems
 {
-    public sealed class MarkingPrototypesIndexerSystem : EntitySystem
+    public sealed partial class MarkingPrototypesIndexerSystem : EntitySystem
     {
         [Dependency] private IPrototypeManager _prototypeManager = default!;
         [Dependency] private IRobustRandom _random = default!;
@@ -121,7 +121,7 @@ namespace Content.Shared.Genetics.Systems
         }
     }
 
-    public sealed class MarkingPrototypeInfo
+    public sealed partial class MarkingPrototypeInfo
     {
         public string MarkingPrototypeId { get; set; } = string.Empty;
         public string[] HexValue { get; set; } = default!;

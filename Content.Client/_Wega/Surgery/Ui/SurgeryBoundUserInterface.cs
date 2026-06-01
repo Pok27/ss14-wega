@@ -7,7 +7,7 @@ using Robust.Shared.Player;
 namespace Content.Client._Wega.Surgery.Ui;
 
 [UsedImplicitly]
-public sealed class SurgeryBoundUserInterface : BoundUserInterface
+public sealed partial class SurgeryBoundUserInterface : BoundUserInterface
 {
     [Dependency] private ISharedPlayerManager _playerManager = default!;
 

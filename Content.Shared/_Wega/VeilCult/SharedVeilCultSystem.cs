@@ -16,7 +16,7 @@ using Robust.Shared.Spawners;
 
 namespace Content.Shared.Veil.Cult;
 
-public abstract class SharedVeilCultSystem : EntitySystem
+public abstract partial class SharedVeilCultSystem : EntitySystem
 {
     [Dependency] private SharedActionsSystem _action = default!;
     [Dependency] private SharedPopupSystem _popup = default!;

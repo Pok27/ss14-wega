@@ -6,7 +6,7 @@ using System.Text.RegularExpressions;
 
 namespace Content.Server.Speech.EntitySystems
 {
-    public sealed class GibberishSpeechSystem : EntitySystem
+    public sealed partial class GibberishSpeechSystem : EntitySystem
     {
         [Dependency] private IRobustRandom _random = default!;
 

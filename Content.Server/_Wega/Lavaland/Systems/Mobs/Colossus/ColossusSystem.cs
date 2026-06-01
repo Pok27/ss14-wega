@@ -15,7 +15,7 @@ using Robust.Shared.Timing;
 
 namespace Content.Server.Lavaland;
 
-public sealed class ColossusSystem : EntitySystem
+public sealed partial class ColossusSystem : EntitySystem
 {
     [Dependency] private ChatSystem _chat = default!;
     [Dependency] private DamageableSystem _damage = default!;

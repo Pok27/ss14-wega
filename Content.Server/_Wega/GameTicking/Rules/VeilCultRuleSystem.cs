@@ -35,7 +35,7 @@ using Content.Shared.Veil.Cult;
 
 namespace Content.Server.GameTicking.Rules
 {
-    public sealed class VeilCultRuleSystem : GameRuleSystem<VeilCultRuleComponent>
+    public sealed partial class VeilCultRuleSystem : GameRuleSystem<VeilCultRuleComponent>
     {
         [Dependency] private SharedAchievementsSystem _achievement = default!;
         [Dependency] private ActionsSystem _action = default!;

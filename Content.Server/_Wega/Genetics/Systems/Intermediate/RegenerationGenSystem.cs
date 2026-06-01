@@ -7,7 +7,7 @@ using Robust.Shared.Prototypes;
 
 namespace Content.Server.Genetics.System;
 
-public sealed class RegenerationGenSystem : EntitySystem
+public sealed partial class RegenerationGenSystem : EntitySystem
 {
     [Dependency] private DamageableSystem _damage = default!;
 

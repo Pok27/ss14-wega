@@ -16,7 +16,7 @@ using Robust.Shared.Timing;
 
 namespace Content.Server.Xenobiology;
 
-public sealed class SlimeSocialSystem : EntitySystem
+public sealed partial class SlimeSocialSystem : EntitySystem
 {
     [Dependency] private ChatSystem _chat = default!;
     [Dependency] private IGameTiming _gameTiming = default!;

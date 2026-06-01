@@ -10,7 +10,7 @@ using Robust.Shared.Containers;
 
 namespace Content.Server.Implants;
 
-public sealed class HandItemImplantSystem : EntitySystem
+public sealed partial class HandItemImplantSystem : EntitySystem
 {
     [Dependency] private AudioSystem _audio = default!;
     [Dependency] private HandsSystem _hands = default!;

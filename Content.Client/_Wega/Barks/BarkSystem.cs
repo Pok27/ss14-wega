@@ -17,7 +17,7 @@ namespace Content.Client.Speech.Synthesis.System;
 /// <summary>
 /// Система отвечающая за прогрышь звука для каждого калиента
 /// </summary>
-public sealed class BarkSystem : EntitySystem
+public sealed partial class BarkSystem : EntitySystem
 {
     [Dependency] private AudioSystem _audio = default!;
     [Dependency] private IConfigurationManager _cfg = default!;

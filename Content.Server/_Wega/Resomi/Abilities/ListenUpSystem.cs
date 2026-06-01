@@ -4,7 +4,7 @@ using Content.Shared.IdentityManagement;
 
 namespace Content.Server.Resomi.Abilities;
 
-public sealed class ListenUpSystem : EntitySystem
+public sealed partial class ListenUpSystem : EntitySystem
 {
     [Dependency] private SharedPopupSystem _popup = default!;
 

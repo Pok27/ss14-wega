@@ -22,7 +22,7 @@ using Robust.Shared.Utility;
 
 namespace Content.Server.Genetics.System;
 
-public sealed class MatterEaterSystem : EntitySystem
+public sealed partial class MatterEaterSystem : EntitySystem
 {
     [Dependency] private ISharedAdminLogManager _adminLogger = default!;
     [Dependency] private SharedAudioSystem _audio = default!;

@@ -14,7 +14,7 @@ using Robust.Shared.Containers;
 
 namespace Content.Server.WashingMachine
 {
-    public sealed class WashingMachineSystem : EntitySystem
+    public sealed partial class WashingMachineSystem : EntitySystem
     {
         [Dependency] private SharedAmbientSoundSystem _ambient = default!;
         [Dependency] private SharedAppearanceSystem _appearance = default!;

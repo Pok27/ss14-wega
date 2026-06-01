@@ -12,7 +12,7 @@ using Content.Shared.Mobs;
 
 namespace Content.Client._Wega.Overlays;
 
-public sealed class ListenUpOverlay : Overlay
+public sealed partial class ListenUpOverlay : Overlay
 {
     [Dependency] private IEntityManager _entity = default!;
     [Dependency] private IPlayerManager _players = default!;

@@ -6,7 +6,7 @@ using Robust.Shared.Timing;
 
 namespace Content.Client._Wega.Genetics.Ui;
 
-public sealed class MindCommunicationUIController : UIController
+public sealed partial class MindCommunicationUIController : UIController
 {
     [Dependency] private IUserInterfaceManager _uiManager = default!;
     [Dependency] private IEntityManager _entityManager = default!;

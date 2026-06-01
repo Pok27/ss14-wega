@@ -6,7 +6,7 @@ using Content.Shared.Objectives.Components;
 
 namespace Content.Server.Objectives.Systems;
 
-public sealed class BloodCultRitualObjectiveSystem : EntitySystem
+public sealed partial class BloodCultRitualObjectiveSystem : EntitySystem
 {
     [Dependency] private BloodCultRuleSystem _bloodCult = default!;
 

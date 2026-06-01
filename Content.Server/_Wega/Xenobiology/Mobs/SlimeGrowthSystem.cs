@@ -8,7 +8,7 @@ using Robust.Shared.Random;
 
 namespace Content.Server.Xenobiology;
 
-public sealed class SlimeGrowthSystem : SharedSlimeGrowthSystem
+public sealed partial class SlimeGrowthSystem : SharedSlimeGrowthSystem
 {
     [Dependency] private IRobustRandom _random = default!;
 

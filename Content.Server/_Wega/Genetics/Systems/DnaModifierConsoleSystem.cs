@@ -36,7 +36,7 @@ using Robust.Shared.Timing;
 namespace Content.Server.Genetics.System
 {
     [UsedImplicitly]
-    public sealed class DnaModifierConsoleSystem : EntitySystem
+    public sealed partial class DnaModifierConsoleSystem : EntitySystem
     {
         [Dependency] private SharedAudioSystem _audio = default!;
         [Dependency] private SharedContainerSystem _container = default!;

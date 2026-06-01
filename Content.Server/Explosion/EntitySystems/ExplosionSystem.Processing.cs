@@ -28,7 +28,7 @@ namespace Content.Server.Explosion.EntitySystems;
 
 public sealed partial class ExplosionSystem
 {
-    [Dependency] private readonly SurgerySystem _surgery = default!; // Corvax-Wega-Surgery
+    [Dependency] private SurgerySystem _surgery = default!; // Corvax-Wega-Surgery
 
     /// <summary>
     ///     Used to limit explosion processing time. See <see cref="MaxProcessingTime"/>.

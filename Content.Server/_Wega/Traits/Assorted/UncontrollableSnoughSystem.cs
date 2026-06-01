@@ -6,7 +6,7 @@ namespace Content.Server.Traits.Assorted;
 /// <summary>
 /// This handles making people randomly cough/sneeze without a disease.
 /// </summary>
-public sealed class UncontrollableSnoughSystem : EntitySystem
+public sealed partial class UncontrollableSnoughSystem : EntitySystem
 {
     [Dependency] private IRobustRandom _random = default!;
     [Dependency] private DiseaseSystem _diseaseSystem = default!;

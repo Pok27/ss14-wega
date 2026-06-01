@@ -8,7 +8,7 @@ using Content.Shared.Weapons.Melee.Events;
 
 namespace Content.Shared.Mobs.Anger;
 
-public sealed class MobAngerSystem : EntitySystem
+public sealed partial class MobAngerSystem : EntitySystem
 {
     [Dependency] private DamageableSystem _damageable = default!;
     [Dependency] private MovementSpeedModifierSystem _speed = default!;

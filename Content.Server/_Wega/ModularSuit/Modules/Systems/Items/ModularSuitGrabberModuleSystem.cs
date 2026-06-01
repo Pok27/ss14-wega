@@ -13,7 +13,7 @@ using Robust.Shared.Physics.Components;
 
 namespace Content.Server.Modular.Suit;
 
-public sealed class ModularSuitGrabberModuleSystem : EntitySystem
+public sealed partial class ModularSuitGrabberModuleSystem : EntitySystem
 {
     [Dependency] private SharedAudioSystem _audio = default!;
     [Dependency] private SharedContainerSystem _container = default!;

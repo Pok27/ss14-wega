@@ -9,7 +9,7 @@ using Robust.Shared.Prototypes;
 
 namespace Content.Server.Lavaland.Artefacts.Systems;
 
-public sealed class ShipInBottleSystem : EntitySystem
+public sealed partial class ShipInBottleSystem : EntitySystem
 {
     [Dependency] private AppearanceSystem _appearance = default!;
     [Dependency] private SharedTransformSystem _transform = default!;

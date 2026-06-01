@@ -4,7 +4,7 @@ using Content.Shared.Veil.Cult.Components;
 
 namespace Content.Server.Objectives.Systems;
 
-public sealed class VeilCultBeaconObjectiveSystem : EntitySystem
+public sealed partial class VeilCultBeaconObjectiveSystem : EntitySystem
 {
     [Dependency] private TargetObjectiveSystem _target = default!;
     [Dependency] private EntityLookupSystem _entityLookup = default!;

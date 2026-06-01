@@ -14,7 +14,7 @@ using Robust.Shared.Timing;
 
 namespace Content.Client.Achievements;
 
-public sealed class AchievementsSystem : SharedAchievementsSystem
+public sealed partial class AchievementsSystem : SharedAchievementsSystem
 {
     [Dependency] private IPlayerManager _playerManager = default!;
     [Dependency] private IUserInterfaceManager _ui = default!;

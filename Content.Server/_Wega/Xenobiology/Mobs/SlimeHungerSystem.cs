@@ -14,7 +14,7 @@ using Robust.Shared.Timing;
 
 namespace Content.Server.Xenobiology;
 
-public sealed class SlimeHungerSystem : EntitySystem
+public sealed partial class SlimeHungerSystem : EntitySystem
 {
     [Dependency] private ChatSystem _chat = default!;
     [Dependency] private SharedDoAfterSystem _doAfter = default!;

@@ -7,7 +7,7 @@ using Robust.Shared.Configuration;
 
 namespace Content.Server.Objectives.Systems;
 
-public sealed class BloodBrotherSharedKillConditionSystem : EntitySystem
+public sealed partial class BloodBrotherSharedKillConditionSystem : EntitySystem
 {
     [Dependency] private EmergencyShuttleSystem _emergencyShuttle = default!;
     [Dependency] private IConfigurationManager _config = default!;

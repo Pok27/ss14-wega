@@ -4,7 +4,7 @@ using Robust.Shared.Timing;
 
 namespace Content.Client.Visuals;
 
-public sealed class FadeSystem : EntitySystem
+public sealed partial class FadeSystem : EntitySystem
 {
     [Dependency] private IGameTiming _gameTiming = default!;
     [Dependency] private SpriteSystem _sprite = default!;

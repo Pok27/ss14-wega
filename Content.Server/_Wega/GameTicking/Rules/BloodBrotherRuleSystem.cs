@@ -18,7 +18,7 @@ using Content.Server.Objectives.Systems;
 
 namespace Content.Server.GameTicking.Rules;
 
-public sealed class BloodBrotherRuleSystem : GameRuleSystem<BloodBrotherRuleComponent>
+public sealed partial class BloodBrotherRuleSystem : GameRuleSystem<BloodBrotherRuleComponent>
 {
     [Dependency] private AntagSelectionSystem _antag = default!;
     [Dependency] private SharedJobSystem _jobs = default!;

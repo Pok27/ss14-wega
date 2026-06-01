@@ -14,7 +14,7 @@ using Robust.Server.GameObjects;
 
 namespace Content.Server.Xenobiology;
 
-public sealed class CellSystem : SharedCellSystem
+public sealed partial class CellSystem : SharedCellSystem
 {
     [Dependency] private AppearanceSystem _appearance = default!;
     [Dependency] private DamageableSystem _damageable = default!;

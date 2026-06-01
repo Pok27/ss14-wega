@@ -5,7 +5,7 @@ using Content.Shared.PowerCell;
 
 namespace Content.Client.Android;
 
-public sealed class AndroidSystem : SharedAndroidSystem
+public sealed partial class AndroidSystem : SharedAndroidSystem
 {
     [Dependency] private PowerCellSystem _powerCell = default!;
     [Dependency] private BatterySystem _battery = default!;

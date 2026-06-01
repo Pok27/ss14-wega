@@ -9,7 +9,7 @@ using Robust.Shared.Prototypes;
 namespace Content.Client._Wega.Android.Ui;
 
 [UsedImplicitly]
-public sealed class AndroidConstructBoundUserInterface : BoundUserInterface
+public sealed partial class AndroidConstructBoundUserInterface : BoundUserInterface
 {
     [ViewVariables]
     private AndroidConstructMenu? _menu;

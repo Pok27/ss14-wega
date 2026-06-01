@@ -5,7 +5,7 @@ using Content.Shared.Interaction.Components;
 
 namespace Content.Server.Genetics.System;
 
-public sealed class TelekinesisGenSystem : EntitySystem
+public sealed partial class TelekinesisGenSystem : EntitySystem
 {
     [Dependency] private HandsSystem _hands = default!;
 

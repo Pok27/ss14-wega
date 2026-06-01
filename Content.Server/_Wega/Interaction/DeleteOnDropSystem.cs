@@ -5,7 +5,7 @@ using Content.Shared.Inventory.Events;
 
 namespace Content.Server.Interaction;
 
-public sealed class DeleteOnDropSystem : EntitySystem
+public sealed partial class DeleteOnDropSystem : EntitySystem
 {
     [Dependency] private IEntityManager _entityManager = default!;
 

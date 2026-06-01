@@ -6,7 +6,7 @@ using Robust.Shared.Prototypes;
 
 namespace Content.Client.Shaders.Systems;
 
-public sealed class NaturalNightVisionOverlay : Overlay
+public sealed partial class NaturalNightVisionOverlay : Overlay
 {
     [Dependency] private IEntityManager _entityManager = default!;
     [Dependency] private IPlayerManager _playerManager = default!;

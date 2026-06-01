@@ -6,7 +6,7 @@ using Robust.Shared.GameStates;
 
 namespace Content.Client.Shaders.Systems;
 
-public sealed class NightVisionSystem : ToggleableEquipmentHudSystem<NightVisionComponent>
+public sealed partial class NightVisionSystem : ToggleableEquipmentHudSystem<NightVisionComponent>
 {
     [Dependency] private IOverlayManager _overlayMan = default!;
     [Dependency] private ILightManager _lightManager = default!;

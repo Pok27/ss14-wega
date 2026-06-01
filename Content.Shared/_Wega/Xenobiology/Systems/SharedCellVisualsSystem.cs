@@ -4,7 +4,7 @@ using Content.Shared.Xenobiology.Visuals;
 
 namespace Content.Shared.Xenobiology.Systems;
 
-public abstract class SharedCellVisualsSystem : EntitySystem
+public abstract partial class SharedCellVisualsSystem : EntitySystem
 {
     [Dependency] private SharedAppearanceSystem _appearance = default!;
 

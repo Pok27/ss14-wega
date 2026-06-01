@@ -5,7 +5,7 @@ using Robust.Shared.Random;
 
 namespace Content.Shared.Genetics.Systems
 {
-    public sealed class StructuralEnzymesIndexerSystem : EntitySystem
+    public sealed partial class StructuralEnzymesIndexerSystem : EntitySystem
     {
         [Dependency] private IPrototypeManager _prototypeManager = default!;
         [Dependency] private IRobustRandom _random = default!;

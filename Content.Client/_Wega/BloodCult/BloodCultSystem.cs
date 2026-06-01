@@ -9,7 +9,7 @@ using Robust.Shared.Random;
 
 namespace Content.Client.Blood.Cult
 {
-    public sealed class BloodCultSystem : SharedBloodCultSystem
+    public sealed partial class BloodCultSystem : SharedBloodCultSystem
     {
         [Dependency] private AppearanceSystem _appearance = default!;
         [Dependency] private IPrototypeManager _prototype = default!;

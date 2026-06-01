@@ -5,7 +5,7 @@ using Robust.Shared.Containers;
 
 namespace Content.Server.Modular.Suit;
 
-public sealed class ModularSuitStorageModuleSystem : EntitySystem
+public sealed partial class ModularSuitStorageModuleSystem : EntitySystem
 {
     [Dependency] private SharedContainerSystem _container = default!;
     [Dependency] private SharedStorageSystem _storage = default!;

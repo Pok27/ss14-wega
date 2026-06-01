@@ -23,7 +23,7 @@ using Robust.Shared.Audio;
 
 namespace Content.Server.Xenobiology
 {
-    public sealed class SlimeExtractorSystem : EntitySystem
+    public sealed partial class SlimeExtractorSystem : EntitySystem
     {
         [Dependency] private IEntityManager _entManager = default!;
         [Dependency] private MobStateSystem _mobState = default!;

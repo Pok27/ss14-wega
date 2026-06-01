@@ -8,7 +8,7 @@ using Robust.Shared.Prototypes;
 namespace Content.Client._Wega.Voucher;
 
 [UsedImplicitly]
-public sealed class VoucherBoundUserInterface : BoundUserInterface
+public sealed partial class VoucherBoundUserInterface : BoundUserInterface
 {
     [Dependency] private IEntityManager _entMan = default!;
     [Dependency] private ISharedPlayerManager _playerManager = default!;

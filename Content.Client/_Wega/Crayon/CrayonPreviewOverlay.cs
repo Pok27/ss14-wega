@@ -11,7 +11,7 @@ using System.Numerics;
 
 namespace Content.Client.Crayon;
 
-public sealed class CrayonPreviewOverlay : Overlay
+public sealed partial class CrayonPreviewOverlay : Overlay
 {
     [Dependency] private IInputManager _input = default!;
     [Dependency] private IPlayerManager _player = default!;

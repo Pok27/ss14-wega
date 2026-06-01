@@ -8,7 +8,7 @@ using Content.Server.Database;
 namespace Content.Server.Administration.Commands;
 
 [AdminCommand(AdminFlags.Permissions)]
-public sealed class TimePackCommand : IConsoleCommand
+public sealed partial class TimePackCommand : IConsoleCommand
 {
     [Dependency] private IPlayerManager _playerManager = default!;
     [Dependency] private IServerDbManager _db = default!;

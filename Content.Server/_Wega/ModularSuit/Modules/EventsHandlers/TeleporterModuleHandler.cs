@@ -4,7 +4,7 @@ using Robust.Shared.Random;
 
 namespace Content.Server.Modular.Suit;
 
-public sealed class TeleporterModuleHandler : ModuleActionHandler
+public sealed partial class TeleporterModuleHandler : ModuleActionHandler
 {
     [Dependency] private EntityLookupSystem _lookup = default!;
     [Dependency] private IRobustRandom _random = default!;

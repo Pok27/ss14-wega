@@ -41,12 +41,12 @@ public sealed partial class DragonSystem : EntitySystem
     [Dependency] private GibbingSystem _gibbing = default!;
     [Dependency] private SmokeSystem _smoke = default!;
     // Corvax-Wega-DragonPushSkill-start
-    [Dependency] private readonly IRobustRandom _random = default!;
-    [Dependency] private readonly TileSystem _tile = default!;
-    [Dependency] private readonly IEntityManager _entityManager = default!;
-    [Dependency] private readonly EntityLookupSystem _entityLookup = default!;
-    [Dependency] private readonly SharedPhysicsSystem _physics = default!;
-    [Dependency] private readonly SharedStunSystem _stun = default!;
+    [Dependency] private IRobustRandom _random = default!;
+    [Dependency] private TileSystem _tile = default!;
+    [Dependency] private IEntityManager _entityManager = default!;
+    [Dependency] private EntityLookupSystem _entityLookup = default!;
+    [Dependency] private SharedPhysicsSystem _physics = default!;
+    [Dependency] private SharedStunSystem _stun = default!;
     // Corvax-Wega-DragonPushSkill-end
 
     [Dependency] private EntityQuery<CarpRiftsConditionComponent> _carpRiftsConditionQuery = default!;

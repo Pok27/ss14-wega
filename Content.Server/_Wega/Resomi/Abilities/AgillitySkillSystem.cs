@@ -10,7 +10,7 @@ using Content.Server.Popups;
 
 namespace Content.Server.Resomi.Abilities;
 
-public sealed class AgillitySkillSystem : SharedAgillitySkillSystem
+public sealed partial class AgillitySkillSystem : SharedAgillitySkillSystem
 {
     [Dependency] private SharedActionsSystem _actions = default!;
     [Dependency] private StaminaSystem _stamina = default!;

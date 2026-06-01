@@ -26,7 +26,7 @@ namespace Content.Server.Disease
     /// <summary>
     /// Everything that's about disease diangosis and machines is in here
     /// </summary>
-    public sealed class DiseaseDiagnosisSystem : EntitySystem
+    public sealed partial class DiseaseDiagnosisSystem : EntitySystem
     {
         [Dependency] private SharedAudioSystem _audio = default!;
         [Dependency] private MetaDataSystem _metaData = default!;

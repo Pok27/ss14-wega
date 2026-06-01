@@ -9,7 +9,7 @@ using Robust.Shared.Timing;
 
 namespace Content.Server.Night.Lightning;
 
-public sealed class NightLightningSystem : EntitySystem
+public sealed partial class NightLightningSystem : EntitySystem
 {
     [Dependency] private IConfigurationManager _cfg = default!;
     [Dependency] private EntityLookupSystem _lookup = default!;

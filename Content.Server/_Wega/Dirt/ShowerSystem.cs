@@ -10,7 +10,7 @@ using Robust.Shared.Audio.Systems;
 
 namespace Content.Server.Shower
 {
-    public sealed class ShowerSystem : EntitySystem
+    public sealed partial class ShowerSystem : EntitySystem
     {
         [Dependency] private SharedAmbientSoundSystem _ambient = default!;
         [Dependency] private SharedAppearanceSystem _appearance = default!;

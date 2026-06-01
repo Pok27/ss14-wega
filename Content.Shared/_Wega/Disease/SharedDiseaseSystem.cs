@@ -4,7 +4,7 @@ using Robust.Shared.Serialization.Manager;
 
 namespace Content.Shared.Disease;
 
-public abstract class SharedDiseaseSystem : EntitySystem
+public abstract partial class SharedDiseaseSystem : EntitySystem
 {
     [Dependency] private IPrototypeManager _prototypeManager = default!;
     [Dependency] private ISerializationManager _serializationManager = default!;

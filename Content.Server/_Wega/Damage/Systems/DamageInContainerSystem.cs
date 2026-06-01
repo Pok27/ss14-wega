@@ -11,7 +11,7 @@ using Robust.Shared.Timing;
 
 namespace Content.Server.Damage.Systems;
 
-public sealed class DamageInContainerSystem : EntitySystem
+public sealed partial class DamageInContainerSystem : EntitySystem
 {
     [Dependency] private IGameTiming _gameTiming = default!;
     [Dependency] private EntityWhitelistSystem _whitelistSystem = default!;

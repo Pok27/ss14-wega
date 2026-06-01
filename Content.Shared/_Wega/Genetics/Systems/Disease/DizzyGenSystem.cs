@@ -5,7 +5,7 @@ using Robust.Shared.Timing;
 namespace Content.Shared.Genetics.Systems;
 
 // TODO: ref this
-public sealed class DizzySystem : EntitySystem
+public sealed partial class DizzySystem : EntitySystem
 {
     [Dependency] private StatusEffectsSystem _statusEffectsSystem = default!;
     [Dependency] private IGameTiming _gameTiming = default!;

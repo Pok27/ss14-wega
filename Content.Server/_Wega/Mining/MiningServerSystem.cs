@@ -9,7 +9,7 @@ using Content.Shared.Examine;
 
 namespace Content.Server.Mining;
 
-public sealed class MiningServerSystem : EntitySystem
+public sealed partial class MiningServerSystem : EntitySystem
 {
     [Dependency] private SharedAmbientSoundSystem _ambient = default!;
     [Dependency] private SharedAppearanceSystem _appearance = default!;

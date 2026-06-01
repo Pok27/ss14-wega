@@ -4,7 +4,7 @@ using Robust.Shared.Random;
 
 namespace Content.Shared.Genetics.Systems;
 
-public sealed class DnaServerSystem : EntitySystem
+public sealed partial class DnaServerSystem : EntitySystem
 {
     [Dependency] private IRobustRandom _random = default!;
 

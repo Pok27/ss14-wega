@@ -19,7 +19,7 @@ using Robust.Shared.Prototypes;
 
 namespace Content.Shared.Weapons.Misc.Upgrades;
 
-public sealed class CrusherUpgradeSystem : EntitySystem
+public sealed partial class CrusherUpgradeSystem : EntitySystem
 {
     [Dependency] private ISharedAdminLogManager _adminLog = default!;
     [Dependency] private SharedAudioSystem _audio = default!;

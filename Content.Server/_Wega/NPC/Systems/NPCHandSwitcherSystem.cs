@@ -11,7 +11,7 @@ namespace Content.Server.NPC.Systems;
 /// <summary>
 /// It didn't work out properly, so we're using heavy artillery.
 /// </summary>
-public sealed class NPCHandSwitcherSystem : EntitySystem
+public sealed partial class NPCHandSwitcherSystem : EntitySystem
 {
     [Dependency] private SharedHandsSystem _hands = default!;
     [Dependency] private IGameTiming _timing = default!;

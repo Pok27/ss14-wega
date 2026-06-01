@@ -20,7 +20,7 @@ using Content.Shared.Lavaland.Components;
 
 namespace Content.Server.Shadow;
 
-public sealed class PhotophobiaSystem : EntitySystem
+public sealed partial class PhotophobiaSystem : EntitySystem
 {
     [Dependency] private IGameTiming _gameTiming = default!;
     [Dependency] private DamageableSystem _damageable = default!;

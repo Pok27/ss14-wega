@@ -9,7 +9,7 @@ using Content.Shared.Cargo.Components;
 
 namespace Content.Shared.Cargo;
 
-public sealed class ChangeableCargoAccountSystem : EntitySystem
+public sealed partial class ChangeableCargoAccountSystem : EntitySystem
 {
     [Dependency] private IPrototypeManager _prototypeManager = default!;
     [Dependency] private AccessReaderSystem _accessReaderSystem = default!;

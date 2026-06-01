@@ -585,18 +585,28 @@ public sealed partial class MonochromaticSkinColoration : ISkinColorationStrateg
 
     public SkinColorationStrategyInput InputType => SkinColorationStrategyInput.Unary;
 
-    public bool VerifySkinColor(Color color)
+    public bool VerifySkinColor(Color color, [NotNullWhen(false)] out string? reason)
     {
+        reason = null;
         var hsv = Color.ToHsv(color);
 
-        if (hsv.X < MinHue || hsv.X > MaxHue)
+        if (hsv.X < MinHue - SkinColorationUtils.Epsilon || hsv.X > MaxHue + SkinColorationUtils.Epsilon)
+        {
+            reason = $"Hue {hsv.X} is outside of range min {MinHue} max {MaxHue}";
             return false;
+        }
 
-        if (hsv.Y < MinSaturation || hsv.Y > MaxSaturation)
+        if (hsv.Y < MinSaturation - SkinColorationUtils.Epsilon || hsv.Y > MaxSaturation + SkinColorationUtils.Epsilon)
+        {
+            reason = $"Saturation {hsv.Y} is outside of range min {MinSaturation} max {MaxSaturation}";
             return false;
+        }
 
-        if (hsv.Z < MinValue || hsv.Z > MaxValue)
+        if (hsv.Z < MinValue - SkinColorationUtils.Epsilon || hsv.Z > MaxValue + SkinColorationUtils.Epsilon)
+        {
+            reason = $"Value {hsv.Z} is outside of range min {MinValue} max {MaxValue}";
             return false;
+        }
 
         return true;
     }

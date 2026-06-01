@@ -3,7 +3,7 @@ using Content.Shared.Resomi.Abilities.Hearing;
 
 namespace Content.Server.Resomi.Abilities;
 
-public sealed class ListenUpSkillSystem : SharedListenUpSkillSystem
+public sealed partial class ListenUpSkillSystem : SharedListenUpSkillSystem
 {
     [Dependency] private ActionsSystem _actionsSystem = default!;
 

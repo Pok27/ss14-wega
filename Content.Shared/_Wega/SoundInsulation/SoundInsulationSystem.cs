@@ -10,7 +10,7 @@ using Robust.Shared.Random;
 
 namespace Content.Shared.SoundInsolation;
 
-public sealed class SoundInsulationSystem : EntitySystem
+public sealed partial class SoundInsulationSystem : EntitySystem
 {
     [Dependency] private IConfigurationManager _cfg = default!;
     [Dependency] private SharedPhysicsSystem _physics = default!;

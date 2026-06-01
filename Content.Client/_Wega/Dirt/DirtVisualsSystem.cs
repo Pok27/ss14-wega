@@ -8,7 +8,7 @@ using Robust.Shared.Utility;
 
 namespace Content.Client.DirtVisuals;
 
-public sealed class DirtVisualsSystem : EntitySystem
+public sealed partial class DirtVisualsSystem : EntitySystem
 {
     [Dependency] private AppearanceSystem _appearance = default!;
     [Dependency] private SpriteSystem _sprite = default!;

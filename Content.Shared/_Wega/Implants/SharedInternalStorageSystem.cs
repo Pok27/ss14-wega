@@ -12,7 +12,7 @@ using Robust.Shared.Prototypes;
 
 namespace Content.Shared.Implants;
 
-public abstract class SharedInternalStorageSystem : EntitySystem
+public abstract partial class SharedInternalStorageSystem : EntitySystem
 {
     [Dependency] private SharedActionsSystem _action = default!;
     [Dependency] private SharedAudioSystem _audio = default!;

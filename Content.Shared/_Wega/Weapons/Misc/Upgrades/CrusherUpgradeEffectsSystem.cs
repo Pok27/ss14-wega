@@ -23,7 +23,7 @@ using Robust.Shared.Timing;
 
 namespace Content.Shared.Weapons.Misc.Upgrades;
 
-public sealed class CrusherUpgradeEffectsSystem : EntitySystem
+public sealed partial class CrusherUpgradeEffectsSystem : EntitySystem
 {
     [Dependency] private DamageableSystem _damage = default!;
     [Dependency] private EntityLookupSystem _lookup = default!;

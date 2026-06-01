@@ -1,6 +1,5 @@
 using System.Diagnostics.CodeAnalysis;
 using System.Linq;
-using System.Numerics;
 using Content.Shared.Body;
 using Content.Shared.Damage;
 using Content.Shared.FixedPoint;
@@ -10,7 +9,7 @@ using Robust.Shared.Prototypes;
 
 namespace Content.Shared.Vampire;
 
-public abstract class SharedVampireSystem : EntitySystem
+public abstract partial class SharedVampireSystem : EntitySystem
 {
     [Dependency] private MobStateSystem _mobState = default!;
     [Dependency] private SharedVisualBodySystem _visualBody = default!;

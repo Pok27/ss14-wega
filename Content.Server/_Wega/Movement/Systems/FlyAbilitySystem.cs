@@ -8,7 +8,7 @@ using Content.Server.Popups;
 
 namespace Content.Server.Movement.Systems;
 
-public sealed class FlyAbilitySystem : SharedFlyAbilitySystem
+public sealed partial class FlyAbilitySystem : SharedFlyAbilitySystem
 {
     [Dependency] private SharedActionsSystem _actions = default!;
     [Dependency] private StaminaSystem _stamina = default!;

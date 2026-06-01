@@ -8,7 +8,7 @@ using Content.Shared.Popups;
 
 namespace Content.Server.Offer;
 
-public sealed class OfferItemSystem : SharedOfferItemSystem
+public sealed partial class OfferItemSystem : SharedOfferItemSystem
 {
     [Dependency] private AlertsSystem _alerts = default!;
     [Dependency] private SharedHandsSystem _hands = default!;

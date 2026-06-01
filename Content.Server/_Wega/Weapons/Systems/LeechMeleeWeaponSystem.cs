@@ -7,7 +7,7 @@ using Content.Shared.Whitelist;
 
 namespace Content.Server.Weapons.Marker;
 
-public sealed class LeechMeleeWeaponSystem : EntitySystem
+public sealed partial class LeechMeleeWeaponSystem : EntitySystem
 {
     [Dependency] private EntityWhitelistSystem _entityWhitelist = default!;
     [Dependency] private DamageableSystem _damageable = default!;

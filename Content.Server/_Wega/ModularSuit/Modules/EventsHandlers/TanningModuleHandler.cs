@@ -4,7 +4,7 @@ using Content.Shared.Modular.Suit;
 
 namespace Content.Server.Modular.Suit;
 
-public sealed class TanningModuleHandler : ModuleActionHandler
+public sealed partial class TanningModuleHandler : ModuleActionHandler
 {
     [Dependency] private SharedVisualBodySystem _visualBody = default!;
 

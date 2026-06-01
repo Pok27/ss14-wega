@@ -7,7 +7,7 @@ using Robust.Shared.Timing;
 
 namespace Content.Client.NullRod;
 
-public sealed class NullDamageOverlay : Overlay
+public sealed partial class NullDamageOverlay : Overlay
 {
     [Dependency] private IEntityManager _entityManager = default!;
     [Dependency] private IPlayerManager _playerManager = default!;

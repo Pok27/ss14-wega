@@ -9,7 +9,7 @@ using Robust.Shared.Random;
 
 namespace Content.Server.Genetics.System;
 
-public sealed class EpilepsySystem : EntitySystem
+public sealed partial class EpilepsySystem : EntitySystem
 {
     [Dependency] private ChatSystem _chat = default!;
     [Dependency] private SharedPopupSystem _popup = default!;

@@ -7,7 +7,7 @@ using Content.Shared.Xenobiology.UI;
 
 namespace Content.Shared.Xenobiology.Systems.Machines;
 
-public sealed class CellularFusionSystem : EntitySystem
+public sealed partial class CellularFusionSystem : EntitySystem
 {
     [Dependency] private CellClientSystem _cellClient = default!;
     [Dependency] private CellServerSystem _cellServer = default!;

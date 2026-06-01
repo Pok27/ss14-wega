@@ -13,7 +13,7 @@ using Robust.Shared.Timing;
 
 namespace Content.Server._Wega.Aliens.Facehugger;
 
-public sealed class FacehuggerSystem : EntitySystem
+public sealed partial class FacehuggerSystem : EntitySystem
 {
     [Dependency] private EntityLookupSystem _lookup = default!;
     [Dependency] private InventorySystem _inventory = default!;

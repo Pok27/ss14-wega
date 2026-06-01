@@ -16,8 +16,8 @@ namespace Content.Client.UserInterface.Systems.Ghost;
 public sealed partial class GhostUIController : UIController, IOnSystemChanged<GhostSystem>, IOnSystemChanged<GhostRespawnSystem> // Corvax-Wega-GhostRespawn
 {
     [Dependency] private IEntityNetworkManager _net = default!;
-    [Dependency] private readonly IConfigurationManager _cfg = default!; // Corvax-Wega-GhostRespawn
-    [Dependency] private readonly IConsoleHost _consoleHost = default!; // Corvax-Wega-GhostRespawn
+    [Dependency] private IConfigurationManager _cfg = default!; // Corvax-Wega-GhostRespawn
+    [Dependency] private IConsoleHost _consoleHost = default!; // Corvax-Wega-GhostRespawn
 
     [UISystemDependency] private readonly GhostSystem? _system = default;
     [UISystemDependency] private readonly GhostRespawnSystem? _respawn = default; // Corvax-Wega-GhostRespawn

@@ -17,7 +17,7 @@ using Robust.Shared.Timing;
 
 namespace Content.Server.VentCraw;
 
-public sealed class VentCrawableSystem : EntitySystem
+public sealed partial class VentCrawableSystem : EntitySystem
 {
     [Dependency] private IGameTiming _gameTiming = default!;
     [Dependency] private SharedAudioSystem _audioSystem = default!;

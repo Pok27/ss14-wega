@@ -10,7 +10,7 @@ using Robust.Shared.Player;
 
 namespace Content.Server.Vibrator.System
 {
-    public sealed class VibratorUsageSystem : EntitySystem
+    public sealed partial class VibratorUsageSystem : EntitySystem
     {
         [Dependency] private IEntityManager _entManager = default!;
         [Dependency] private PopupSystem _popupSystem = default!;

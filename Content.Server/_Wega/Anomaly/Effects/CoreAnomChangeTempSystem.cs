@@ -4,7 +4,7 @@ using Content.Server.CoreTempChange.Components;
 
 namespace Content.Server.CoreTempChange.Effects;
 
-public sealed class CoreTempChangeSystem : EntitySystem
+public sealed partial class CoreTempChangeSystem : EntitySystem
 {
     [Dependency] private AtmosphereSystem _atmosphere = default!;
     [Dependency] private TransformSystem _xform = default!;

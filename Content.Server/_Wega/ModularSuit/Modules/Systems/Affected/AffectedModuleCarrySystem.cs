@@ -5,7 +5,7 @@ using Content.Shared.Mobs.Systems;
 
 namespace Content.Server.Modular.Suit;
 
-public sealed class AffectedModuleCarrySystem : EntitySystem
+public sealed partial class AffectedModuleCarrySystem : EntitySystem
 {
     [Dependency] private MobStateSystem _mobState = default!;
     [Dependency] private MovementSpeedModifierSystem _speed = default!;

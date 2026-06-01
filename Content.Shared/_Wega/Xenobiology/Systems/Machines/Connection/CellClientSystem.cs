@@ -3,7 +3,7 @@ using Content.Shared.Xenobiology.Components.Server;
 
 namespace Content.Shared.Xenobiology.Systems.Machines.Connection;
 
-public sealed class CellClientSystem : EntitySystem
+public sealed partial class CellClientSystem : EntitySystem
 {
     [Dependency] private CellServerSystem _cellServer = default!;
 

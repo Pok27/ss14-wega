@@ -12,7 +12,7 @@ namespace Content.Server.StationEvents.Events;
 /// Infects a couple people
 /// with a random disease that isn't super deadly
 /// </summary>
-public sealed class DiseaseOutbreakRule : StationEventSystem<DiseaseOutbreakRuleComponent>
+public sealed partial class DiseaseOutbreakRule : StationEventSystem<DiseaseOutbreakRuleComponent>
 {
     [Dependency] private DiseaseSystem _diseaseSystem = default!;
     [Dependency] private MobStateSystem _mobStateSystem = default!;

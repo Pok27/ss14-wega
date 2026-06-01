@@ -1,7 +1,7 @@
 using Content.Shared.Injector.Fabticator;
 using Robust.Client.GameObjects;
 
-public sealed class InjectorFabticatorSystem : EntitySystem
+public sealed partial class InjectorFabticatorSystem : EntitySystem
 {
     [Dependency] private AppearanceSystem _appearance = default!;
     [Dependency] private SpriteSystem _sprite = default!;

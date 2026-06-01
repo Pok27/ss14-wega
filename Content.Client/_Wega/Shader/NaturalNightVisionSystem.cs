@@ -7,7 +7,7 @@ using Robust.Shared.Player;
 
 namespace Content.Client.Shaders.Systems;
 
-public sealed class NaturalNightVisionSystem : EntitySystem
+public sealed partial class NaturalNightVisionSystem : EntitySystem
 {
     [Dependency] private IPlayerManager _playerManager = default!;
     [Dependency] private IOverlayManager _overlayManager = default!;

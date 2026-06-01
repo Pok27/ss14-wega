@@ -13,7 +13,7 @@ using Robust.Shared.Prototypes;
 
 namespace Content.Server.Pain;
 
-public sealed class PainSystem : EntitySystem
+public sealed partial class PainSystem : EntitySystem
 {
     [Dependency] private ChatSystem _emoting = default!;
     [Dependency] private SharedJitteringSystem _jittering = default!;

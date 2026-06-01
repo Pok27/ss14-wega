@@ -3,7 +3,7 @@ using Content.Shared.Objectives.Components;
 
 namespace Content.Server.Objectives.Systems;
 
-public sealed class BloodCultTargetObjectiveSystem : EntitySystem
+public sealed partial class BloodCultTargetObjectiveSystem : EntitySystem
 {
     [Dependency] private TargetObjectiveSystem _target = default!;
 

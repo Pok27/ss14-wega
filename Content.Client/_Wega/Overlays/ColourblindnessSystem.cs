@@ -6,7 +6,7 @@ using Robust.Shared.Player;
 
 namespace Content.Client.Shaders.System;
 
-public sealed class ColourblindnessSystem : EntitySystem
+public sealed partial class ColourblindnessSystem : EntitySystem
 {
     [Dependency] private IPlayerManager _player = default!;
     [Dependency] private IOverlayManager _overlayMan = default!;

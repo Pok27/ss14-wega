@@ -7,7 +7,7 @@ using Content.Shared.Vampire.Components;
 
 namespace Content.Server.Genetics.System;
 
-public sealed class SpeedUpGenSystem : EntitySystem
+public sealed partial class SpeedUpGenSystem : EntitySystem
 {
     [Dependency] private DamageableSystem _damageable = default!;
     [Dependency] private MovementSpeedModifierSystem _speed = default!;

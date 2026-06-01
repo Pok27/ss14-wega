@@ -11,7 +11,7 @@ using Robust.Shared.Prototypes;
 
 namespace Content.Server.Mining;
 
-public sealed class MiningConsoleSystem : EntitySystem
+public sealed partial class MiningConsoleSystem : EntitySystem
 {
     [Dependency] private SharedAmbientSoundSystem _ambient = default!;
     [Dependency] private SharedAppearanceSystem _appearance = default!;
